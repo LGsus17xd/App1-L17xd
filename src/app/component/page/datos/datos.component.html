@@ -1,1 +1,11 @@
-<p>datos works!</p>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body" *ngFor="let item of CafeteriasList">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">{{item.ID}}</p>
+      <p class="card-text">{{item.farmacia}}</p>
+      <p class="card-text">{{item.x}}</p>
+      <p class="card-text">{{item.y}}</p>
+      <a href="#" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>
