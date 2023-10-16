@@ -6,12 +6,20 @@ import {Observable} from 'rxjs';
     providedIn: 'root'
 })
 export class ServicioService{
-    URL="assets/Datos/farmacias.json";
+    URL="assets/datos/farmacias.json";
 
     constructor(private http:HttpClient){
 
     }
     get(){
-        return this.URL;
+        return this.http.get(this.URL)
     }
+   /* GetById(Id:String){
+        return new Observable(observer =>{
+            this.get().subscribe((result:any[])=>{
+                const filtro = result.filter(item => item.Id === Id)
+                return observer.next(filtro[0]);
+            })
+        })
+    }*/
 }

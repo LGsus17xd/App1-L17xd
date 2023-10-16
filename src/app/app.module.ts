@@ -10,6 +10,9 @@ import { InicioComponent } from './component/page/inicio/inicio.component';
 import { MapaComponent } from './component/page/mapa/mapa.component';
 import { App1Component } from './app1/app1.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetallerComponent } from './component/page/datos/detaller/detaller.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import { FooterComponent } from './component/footer/footer.component';
     InicioComponent,
     MapaComponent,
     App1Component,
-    FooterComponent
+    FooterComponent,
+    DetallerComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

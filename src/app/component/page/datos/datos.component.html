@@ -1,11 +1,22 @@
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body" *ngFor="let item of CafeteriasList">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">{{item.ID}}</p>
-      <p class="card-text">{{item.farmacia}}</p>
-      <p class="card-text">{{item.x}}</p>
-      <p class="card-text">{{item.y}}</p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre</th>
+      <th scope="col">Longitud</th>
+      <th scope="col">Latitud</th>
+      <th scope="col">Detalle</th>
+      
+    </tr>
+  </thead>
+  <tbody *ngFor=" let item of FarmaciasList">
+    <tr>
+      <th scope="row"></th>
+      <td>{{item.ID}}</td>
+      <td>{{item.farmacias}}</td>
+      <td>{{item.x}}</td>
+      <td>{{item.y}}</td>
+      <td class="btn btn-primary" (click)="Detalle(item.ID)">Detalle</td>
+    </tr>
+  
+  </tbody>
+</table>

@@ -13,7 +13,12 @@ export class DatosComponent {
   constructor(private SVC:ServicioService, private router:Router){
     this.SVC.get().subscribe((result:any)=>{
       this.FarmaciasList=result
+      console.log(this.FarmaciasList)
     })
     
+  }
+  Detalle(Id:String){
+    this.router.navigate(['Id',Id])
+    console.log(Id)
   }
 }
