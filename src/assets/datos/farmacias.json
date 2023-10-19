@@ -1,25 +1,25 @@
 [
  {
   "ID": 1,
-  "farmacias": "guadalajara",
+  "farmacias": "Guadalajara Lomas",
   "x": -100.951534974742,
   "y": 22.1432206883166
  },
  {
   "ID": 2,
-  "farmacias": "guadalajara",
+  "farmacias": "Guadalajara Saucito",
   "x": -100.96488485003,
   "y": 22.1321505200007
  },
  {
   "ID": 3,
-  "farmacias": "guadalajara",
+  "farmacias": "Guadalajara Valle Dorado",
   "x": -100.973625454946,
   "y": 22.1279066718424
  },
  {
   "ID": 4,
-  "farmacias": "guadalajara",
+  "farmacias": "Guadalajara Pozos",
   "x": -100.975181314869,
   "y": 22.1488155093106
  }
